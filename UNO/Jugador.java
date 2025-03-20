@@ -1,14 +1,25 @@
 package UNO;
+import java.util.ArrayList;
 
 public class Jugador {
 
     private String nomJugador;
+    private ArrayList<Carta> cartes;
 
-    public String getNomJugadro(){
+    public Jugador(String nom) {
+        nomJugador = nom;
+        cartes = new ArrayList<>();
+    }
+
+    public String getNomJugador() {
         return nomJugador;
     }
 
-    public Jugador (String nom){
-        nomJugador = nom;
+    public ArrayList<Carta> getCartes() {
+        return cartes;
+    }
+
+    public void addCarta(Carta carta) {
+        cartes.add(carta);
     }
 }
