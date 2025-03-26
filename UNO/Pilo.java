@@ -1,12 +1,11 @@
 package UNO;
 
-import java.util.ArrayList;
 import java.util.Stack;
 
-public class Mazo {
+public class Pilo {
     private Stack<Carta> cartes;
 
-    public Mazo() {
+    public Pilo() {
         this.cartes = new Stack<>();
     }
 
@@ -17,4 +16,5 @@ public class Mazo {
     public Stack<Carta> getCartes() {
         return cartes;
     }
+
 }

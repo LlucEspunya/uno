@@ -22,4 +22,12 @@ public class Jugador {
     public void addCarta(Carta carta) {
         cartes.add(carta);
     }
+
+    public void tirarCartaPilo(Pilo pilo){
+        if (!cartes.isEmpty()){
+            Carta carta = cartes.remove(0);
+            pilo.addCarta(carta);
+        }
+    }
+
 }
