@@ -38,6 +38,5 @@ public class Main {
         while(!j1.getCartes().isEmpty()){
             j1.tirarCartaPilo(pilo);
         }
-
     }
 }
