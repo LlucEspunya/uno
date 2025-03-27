@@ -14,6 +14,12 @@ public class Mazo {
     }
 
     public Stack<Carta> getCartes() {
+
         return cartes;
+    }
+
+    public void tirarCartaPilo(Pilo pilo){
+        Carta carta = cartes.remove(0);
+        pilo.addCarta(carta);
     }
 }

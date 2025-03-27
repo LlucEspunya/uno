@@ -19,7 +19,6 @@ public class Main {
             UI.mostrarCarta(carta);
         }
 
-        //crear pilo
         Pilo pilo = new Pilo();
 
 
@@ -35,8 +34,16 @@ public class Main {
 
         UI.mostrarCartes(j1.getCartes());
 
+        if (!pilo.getCartes().isEmpty()){
+            mazo.tirarCartaPilo(pilo);
+        }
+
         while(!j1.getCartes().isEmpty()){
             j1.tirarCartaPilo(pilo);
         }
+
+//        if(mazo.getCartes().isEmpty()){
+//            pilo.reiniciarMazo(mazo);
+//        }
     }
 }

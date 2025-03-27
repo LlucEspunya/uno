@@ -1,6 +1,7 @@
 package UNO;
 
 import java.util.Stack;
+import java.util.ArrayList;
 
 public class Pilo {
     private Stack<Carta> cartes;
@@ -13,8 +14,11 @@ public class Pilo {
         cartes.push(carta);
     }
 
-    public Stack<Carta> getCartes() {
-        return cartes;
+    public ArrayList<Carta> getCartes() {
+        return new ArrayList<>(cartes);
     }
 
+//    public void reiniciarMazo(Mazo mazo){
+//
+//    }
 }

@@ -12,14 +12,17 @@ public class Jugador {
     }
 
     public String getNomJugador() {
+
         return nomJugador;
     }
 
     public ArrayList<Carta> getCartes() {
+
         return cartes;
     }
 
     public void addCarta(Carta carta) {
+
         cartes.add(carta);
     }
 
