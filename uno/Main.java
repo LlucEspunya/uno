@@ -1,4 +1,6 @@
-package UNO;
+package uno;
+
+import uno.interficie.UI;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,14 +12,9 @@ public class Main {
         //Generar mazo
         Mazo mazo = new Mazo();
 
-        mazo.addCarta(c1);
-        mazo.addCarta(c2);
-        mazo.addCarta(c3);
-        mazo.addCarta(c4);
-
-        for (Carta carta : mazo.getCartes()) {
-            UI.mostrarCarta(carta);
-        }
+//        for (Carta carta : mazo.getCartes()) {
+//            UI.mostrarCarta(carta);
+//        }
 
         Pilo pilo = new Pilo();
 
@@ -28,22 +25,27 @@ public class Main {
         j1.addCarta(c3);
         j1.addCarta(c4);
 
-        for (Carta c : j1.getCartes()) {
-            UI.mostrarCarta(c);
-        }
+//        for (Carta c : j1.getCartes()) {
+//            UI.mostrarCarta(c);
+//        }
 
-        UI.mostrarCartes(j1.getCartes());
+//        UI.mostrarCartes(j1.getCartes());
 
         if (!pilo.getCartes().isEmpty()){
             mazo.tirarCartaPilo(pilo);
         }
 
-        while(!j1.getCartes().isEmpty()){
-            j1.tirarCartaPilo(pilo);
-        }
+//        if(!j1.getCartes().isEmpty()){
+//            j1.tirarCartaPilo(pilo);
+//        }
+
+        UI.mostrarCartes(j1.getCartes());
+
+        UI.mostrarCartes(pilo.getCartes());
 
 //        if(mazo.getCartes().isEmpty()){
 //            pilo.reiniciarMazo(mazo);
 //        }
+
     }
 }

@@ -1,4 +1,4 @@
-package UNO;
+package uno;
 
 import java.util.Stack;
 import java.util.ArrayList;
@@ -10,6 +10,10 @@ public class Pilo {
         this.cartes = new Stack<>();
     }
 
+    public Carta agafarCarta(){
+        return cartes.pop();
+    }
+
     public void addCarta(Carta carta) {
         cartes.push(carta);
     }
@@ -17,8 +21,4 @@ public class Pilo {
     public ArrayList<Carta> getCartes() {
         return new ArrayList<>(cartes);
     }
-
-//    public void reiniciarMazo(Mazo mazo){
-//
-//    }
 }
